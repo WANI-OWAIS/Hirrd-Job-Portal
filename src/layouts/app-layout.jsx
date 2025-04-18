@@ -7,7 +7,7 @@ const AppLayout = () => {
   return (
     <div>
       <div className="grid-background"></div>
-      <main className="min-h-screen container px-4  sm:px-6 lg:px-8">
+      <main className="min-h-screen w-full max-w-screen-2xl mx-auto px-4 sm:px-6 md:px-8 lg:px-10 xl:px-12">
         <Header />
         <Outlet />
       </main>
@@ -18,4 +18,4 @@ const AppLayout = () => {
   );
 };
 
-export default AppLayout;
+export default AppLayout;         
