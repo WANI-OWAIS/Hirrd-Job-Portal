@@ -38,8 +38,10 @@ const LandingPage = () => {
           </Button>
         </Link>
       </div>
+      
 
       {/* carousal */}
+
       <Carousel plugins={[
         Autoplay({ delay: 2000 })
       ]} className="w-full py-10" >
@@ -60,10 +62,13 @@ const LandingPage = () => {
 
 
       {/* banner */}
+
       <img src="banner.png" alt="" />
 
       <section className="grid grid-cols-1 md:grid-cols-2 gap-4">
+
         {/* cards */}
+
         <Card>
           <CardHeader>
             <CardTitle className="text-2xl">For Job Seekers</CardTitle>
@@ -81,13 +86,11 @@ const LandingPage = () => {
             Post jobs, manage applications, and find the best candidates.
           </CardContent>
         </Card>
-
-
-
       </section>
 
 
       {/* accordion */}
+
       <Accordion type="multiple" className="w-full">
         {faqs.map((faq, index) => (
           <AccordionItem key={index} value={`item-${index + 1}`}>
@@ -96,6 +99,7 @@ const LandingPage = () => {
           </AccordionItem>
         ))}
       </Accordion>
+
     </main>
   );
 };
